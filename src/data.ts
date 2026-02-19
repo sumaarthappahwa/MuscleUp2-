@@ -158,7 +158,7 @@ export const products: Product[] = [
   },
   {
     id: "SUP013",
-    brand: "Generic",
+    brand: "",
     title: "Whey Protein Concentrate 1kg",
     description: "High-quality whey protein concentrate with 80% protein. Rich in BCAAs and essential amino acids for muscle building.",
     availability: "in stock",

@@ -10,6 +10,14 @@ export default defineConfig(({mode}) => {
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
+    build: {
+      rollupOptions: {
+        external: ['express', 'better-sqlite3', 'dotenv'],
+      },
+    },
+    optimizeDeps: {
+      exclude: ['express', 'better-sqlite3', 'dotenv'],
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
